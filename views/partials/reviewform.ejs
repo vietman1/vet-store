@@ -1,0 +1,46 @@
+
+<div class="modal" tabindex="-1" id="review-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">How was your experience</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <section class="product-details-add-reviews">
+                <form method="POST" action="/products/<%=product._id%>/reviews">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="review[name]" >
+                      </div>
+            
+                      <div class="mb-3">
+                        <div>How was your experience</div>
+                        <div class="stars" id="rating">
+                            <i class="fa-solid fa-thumbs-up" data-rating="1"></i>
+                            <i class="fa-solid fa-thumbs-up" data-rating="2"></i>
+                            <i class="fa-solid fa-thumbs-up" data-rating="3"></i>
+                            <i class="fa-solid fa-thumbs-up" data-rating="4"></i>
+                            <i class="fa-solid fa-thumbs-up" data-rating="5"></i>
+                        </div>
+                      </div>  
+                      
+            
+                      <div class="mb-3">
+                        <label for="body" class="form-label">Comments</label>
+                        <input type="text" class="form-control" id="body" name="review[body]">
+                      </div>
+            
+                    <input type="hidden" name="review[rating]" id="inputRating">  
+                    <button style="display: none;" id="hidden-form-button">Submit</button>
+            
+                </form>
+            </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="submit-form">Submit</button></a>
+        </div>
+      </div>
+    </div>
+  </div>

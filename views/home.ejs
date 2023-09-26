@@ -1,0 +1,518 @@
+<% layout('layouts/boilerplate.ejs') %>
+
+
+
+    <!-- Carousel -->
+    <!-- <section class="homepage-carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                    aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://i02.appmifile.com/653_operator_global/02/12/2022/f780764cd0e9e7fc9885dc33ae2b3466.jpg?f=webp"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> 
+                            <div class="btn btn-success">Details</div>
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://i02.appmifile.com/802_operator_global/17/03/2023/cb15394760e46d93c00a483f8f5bb99b.png?f=webp"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i02.appmifile.com/679_operator_global/02/08/2023/6688dbeaee9baad0e5b453be0b2a2629.jpg?f=webp"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i02.appmifile.com/653_operator_global/02/12/2022/f780764cd0e9e7fc9885dc33ae2b3466.jpg?f=webp"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i02.appmifile.com/679_operator_global/02/08/2023/6688dbeaee9baad0e5b453be0b2a2629.jpg?f=webp"
+                        class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> -->
+
+
+    <!-- Hero Section -->
+    <section class="homepage-hero">
+        <div class="container-fluid">
+            <div class="image">
+                <img class="img-fluid" src="/images/hero.png" alt="">
+            </div>
+            <div class="body">
+                <!-- <div class="text"> -->
+                <!-- <h1 class="brand">
+                    <div>Vet Scooter</div>
+                </h1> -->
+                <div class="text">
+                    <div class="title">Vietnam's #1 Electric Scooters Distributor</div>
+                    <div class="description"> We are accelerating the world's transition to sustainable energy with
+                        electric scooters, solar and integrated renewable energy solutions for homes and businesses
+                    </div>
+                    <!-- </div> -->
+                    <div class="btn btn-success">Contact Us!</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Products preview -->
+    <section class="homepage-products-preview">
+        <h2>Electronic Scooters</h2>
+        <div class="container-fluid">
+            <div class="row text-center ">
+
+                <% for (let i=0; i<3; i++){ %>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
+
+
+                        <div class="card m-1">
+
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">NEW</span>
+
+                            <div class="card-img-container mb-6">
+                                <img src="<%=products[i].image%>" class="card-img-top p-3 " alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class=" card-title text-center m-3">
+                                    <%=products[i].name%>
+                                </h5>
+                                <a href="/products/<%=products[i]._id%>" class="btn btn-outline-success">Learn
+                                    More</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <%}%>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
+
+
+                            <div class="card m-1 ">
+                                <div class="card-body" id="homepage-card-body-all-products-button">
+                                    <h5> All Products</h5>
+                                    <a href="/products" class="btn btn-outline-success" style="width: 40%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Our Partners -->
+
+    <section class="homepage-partners">
+        <div class="text"> We work with BEST partners</div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2">
+                    <img src="https://logos-world.net/wp-content/uploads/2021/04/Maserati-Logo-2020-present.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="https://clipground.com/images/ferrari-500-clipart-7.jpg" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="https://purepng.com/public/uploads/medium/purepng.com-bentley-motors-logobentleybentley-motorsbritishmanufacturerluxury-carsloho-1701527414239tayyn.png"
+                        alt="">
+                </div>
+                <div class="col-2">
+                    <img src="https://www.jaggaer.com/app/uploads/2020/10/rolls-royce-logo.png" alt="">
+                </div>
+                <div class="col-2">
+                    <img src="https://th.bing.com/th/id/R.d9a06e6af0ad0b383f7eeddaf38334e4?rik=GV5Kk8fVPukT0g&pid=ImgRaw&r=0"
+                        alt="">
+                </div>
+                <div class="col-2">
+                    <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG7.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Partners carousel -->
+    <section class="homepage-partners-carousel">
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="homepage-customer-reviews">
+        <div class="title">Featured Reviews</div>
+        <div class="slick-carousel">
+            <!-- Inside the containing div, add one div for each slide -->
+            <div class="item">
+                <!-- You can put an image or text inside each slide div -->
+
+                <div class="card">
+                    <img src="http://files.dadaowl.cn/20230422/65d089b780d340f99f4e21f824dc497c.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review">
+                            <div class="total-likes" style="color: #ff9c1a;letter-spacing: 3px;">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <p class="card-text">I love riding this thing. It is so untamed and wild. Exciting stuff!
+                            </p>
+                        </div>
+                        <div class="user">
+                            <div> Erik Krauser <i class="fa-solid fa-circle-check" style="color:rgb(88, 187, 103)"></i>
+                            </div>
+                            <p style="opacity: 0.85; font-size: 12px;">25/09/2023</p>
+                        </div>
+
+                    </div>
+                    <ul style="display: flex; flex-direction: row;" class="list-group list-group-flush">
+                        <li class="list-group-item-1"><img style="object-fit: contain;"
+                                src="https://cdn.shopify.com/s/files/1/0724/4221/6768/products/b58ce7b99582c961375527c3c6b27ebb_45x.png?v=1694228292"
+                                alt=""></li>
+                        <li class="list-group-item-2">MUKUTA 10 Plus</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <!-- You can put an image or text inside each slide div -->
+
+                <div class="card">
+                    <img src="http://files.dadaowl.cn/20230303/17aad9f68988438795b7da572903a458.JPG"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review">
+
+                            <div class="total-likes" style="color: #ff9c1a;letter-spacing: 3px;">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <p class="card-text">The best scooter in this price range in the market right now! Exciting
+                                stuff! </p>
+                        </div>
+                        <div class="user">
+                            <div> Jack Power <i class="fa-solid fa-circle-check" style="color:rgb(88, 187, 103)"></i>
+                            </div>
+
+
+                            <p style="opacity: 0.85; font-size: 12px;">25/09/2023</p>
+                        </div>
+                    </div>
+                    <ul style="display: flex; flex-direction: row;" class="list-group list-group-flush">
+                        <li class="list-group-item-1"><img style="object-fit: contain;"
+                                src="https://cdn.shopify.com/s/files/1/0724/4221/6768/products/b58ce7b99582c961375527c3c6b27ebb_45x.png?v=1694228292"
+                                alt=""></li>
+                                <li class="list-group-item-2">MUKUTA 10 Plus</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <!-- You can put an image or text inside each slide div -->
+
+                <div class="card">
+                    <img src="http://files.dadaowl.cn/20230608/8af843ca016b4c1a89081419c9d4cb16_compress_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review">
+
+                            <div class="total-likes" style="color: #ff9c1a;letter-spacing: 3px;">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <p class="card-text">I love riding this thing. It is so untamed and wild. Exciting stuff!
+                            </p>
+                        </div>
+                        <div class="user">
+                            <div> Dicky Dickson<i class="fa-solid fa-circle-check" style="color:rgb(88, 187, 103)"></i>
+                            </div>
+
+
+                            <p style="opacity: 0.85; font-size: 12px;">25/09/2023</p>
+                        </div>
+                    </div>
+                    <ul style="display: flex; flex-direction: row;" class="list-group list-group-flush">
+                        <li class="list-group-item-1"><img style="object-fit: contain;"
+                                src="https://cdn.shopify.com/s/files/1/0724/4221/6768/products/b58ce7b99582c961375527c3c6b27ebb_45x.png?v=1694228292"
+                                alt=""></li>
+                        <li class="list-group-item-2">MUKUTA 10 Plus</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <!-- You can put an image or text inside each slide div -->
+
+                <div class="card">
+                    <img src="http://files.dadaowl.cn/20230303/bb00d97d4eec4e85a401ea42988ee201.JPG"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review">
+
+                            <div class="total-likes" style="color: #ff9c1a;letter-spacing: 3px;">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <p class="card-text">Vet Scooter team rocks. Mukuta 10 Pro is the best! Exciting stuff!</p>
+                        </div>
+                        <div class="user">
+
+                            <div> Peter Parker <i class="fa-solid fa-circle-check" style="color:rgb(88, 187, 103)"></i>
+                            </div>
+
+
+                            <p style="opacity: 0.85; font-size: 12px;">25/09/2023</p>
+                        </div>
+
+                    </div>
+                    <ul style="display: flex; flex-direction: row;" class="list-group list-group-flush">
+                        <li class="list-group-item-1"><img style="object-fit: contain;"
+                                src="https://cdn.shopify.com/s/files/1/0724/4221/6768/products/b58ce7b99582c961375527c3c6b27ebb_45x.png?v=1694228292"
+                                alt=""></li>
+                        <li class="list-group-item-2">MUKUTA 10 Plus</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <!-- You can put an image or text inside each slide div -->
+
+                <div class="card">
+                    <img src="http://files.dadaowl.cn/20230228/0628f9f4d38a413caf5122e2e83cd5e3.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="review">
+
+                            <div class="total-likes" style="color: #ff9c1a;letter-spacing: 3px;">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <p class="card-text">It's been an absolute blast riding this beast... Mukuta 10 Pro is the
+                                best!
+                            </p>
+                        </div>
+
+                        <div class="user">
+                            <div> Bruce Banner <i class="fa-solid fa-circle-check" style="color:rgb(88, 187, 103)"></i>
+                            </div>
+                            <p style="opacity: 0.85; font-size: 12px;">25/09/2023</p>
+                        </div>
+                    </div>
+                    <ul style="display: flex; flex-direction: row;" class="list-group list-group-flush">
+                        <li class="list-group-item-1"><img style="object-fit: contain;"
+                                src="https://cdn.shopify.com/s/files/1/0724/4221/6768/products/b58ce7b99582c961375527c3c6b27ebb_45x.png?v=1694228292"
+                                alt=""></li>
+                        <li class="list-group-item-2">MUKUTA 10 Plus</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="item">
+                <!-- You can put an image or text inside each slide div -->
+
+                <div class="card">
+                    <img src="http://files.dadaowl.cn/20230608/8af843ca016b4c1a89081419c9d4cb16_compress_.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <div class="review">
+                            <div class="total-likes" style="color: #ff9c1a;letter-spacing: 3px;">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </div>
+                            <p class="card-text">Very nice. I love it... Mukuta 10 Pro is the best! Exciting stuff!</p>
+                        </div>
+
+                        <div class="user">
+                            <div> Ted Shmosby <i class="fa-solid fa-circle-check" style="color:rgb(88, 187, 103)"></i>
+                            </div>
+                            <p style="opacity: 0.85; font-size: 12px;">25/09/2023</p>
+                        </div>
+
+                    </div>
+                    <ul style="display: flex; flex-direction: row;" class="list-group list-group-flush">
+                        <li class="list-group-item-1"><img style="object-fit: contain;"
+                                src="https://cdn.shopify.com/s/files/1/0724/4221/6768/products/b58ce7b99582c961375527c3c6b27ebb_45x.png?v=1694228292"
+                                alt=""></li>
+                        <li class="list-group-item-2">MUKUTA 10 Plus</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="homepage-find-us">
+
+        <div class="head">
+            <h1>Come Visit Us!</h1>
+            <h5>And drive away with your new ride!</h5>
+        </div>
+        <!-- <div class="info">
+            <div class="email">info@vetscooter.com</div>
+            <div class="address">Cau Giay, Hanoi, Vietnam </div>
+            <div class="phone">+84 98168193</div>
+        </div> -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.6407347704744!2d105.7963607163286!3d21.047056408657042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3b3542b66f%3A0xe391f4243d2d661e!2zOCBOZy4gMzYgSG_DoG5nIFF14buRYyBWaeG7h3QsIE5naMSpYSDEkMO0LCBD4bqndSBHaeG6pXksIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1694272518579!5m2!1sen!2s"
+            width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>

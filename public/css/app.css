@@ -1,0 +1,955 @@
+/* Common */
+body {
+    /* background-image: url('https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-scooter-4-go/pc/fef33f3db7efa457e1d8584d02b13d5f.jpg?f=webp'); */
+    background-color: #f3f3f3;
+
+
+}
+
+/**************** NAV BAR *****************/
+.navbar {
+    /* background-color: #f5ebebec !important; */
+
+}
+
+
+/**************** HOME PAGE /*****************/
+
+/* Carousel */
+.homepage-carousel {
+    /* height: 550px; */
+}
+
+.homepage-carousel .btn {
+    background-color: white;
+    color: black;
+    border-color: transparent;
+
+}
+
+.homepage-carousel .carousel-inner img {
+    /* object-fit: contain !important;
+    ;
+    width: 100% !important;
+    height: 550px */
+}
+
+
+
+/* Hero section */
+
+.homepage-hero {
+    /* background-image: url('https://images.unsplash.com/photo-1541614705297-1cec36271936?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); */
+}
+
+.homepage-hero {
+    position: relative;
+}
+
+.homepage-hero .body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    /* You can adjust the background color and opacity */
+    color: black;
+    /* Text color */
+    padding: 20px;
+    /* Add padding to the text */
+    box-sizing: border-box;
+    padding-bottom: 200px;
+}
+
+
+
+
+.homepage-hero .body .brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 50%;
+}
+
+.homepage-hero .body .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    width: 80%;
+    text-align: left;
+}
+
+.homepage-hero .body .text .title {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.homepage-hero .body .text .description {
+    width: 80%;
+    font-size: 20px;
+}
+
+.homepage-hero .body .text .btn {
+    margin-top: 50px;
+    width: 30%;
+
+}
+
+
+
+/* Products list */
+
+.homepage-products-preview {
+    margin: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 2%;
+}
+
+.homepage-products-preview h2 {
+    margin-bottom: 3%;
+}
+
+.homepage-products-preview .card {
+    width: auto;
+    height: 100%;
+    border: none;
+}
+
+
+.homepage-products-preview h2 {
+    text-align: center;
+
+}
+
+#homepage-card-body-all-products-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Partners */
+.homepage-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color: white;
+}
+
+.homepage-partners .col-2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.homepage-partners img {
+    height: 100px;
+    width: 100px;
+}
+
+.homepage-partners .text {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+/* Partners Carousel */
+.homepage-partners-carousel {
+    align-items: center;
+    background: #E3E3E3;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+/* Collage of pics */
+
+.homepage-collage {
+    text-align: center;
+    padding: 20px;
+}
+
+.homepage-collage h5 {
+    padding-top: 15px;
+
+}
+
+
+.rows {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+
+}
+
+.column {
+    flex: 1;
+    margin-right: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+
+
+}
+
+.column img {
+    width: 100%;
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.rows .column img:first-child {
+    margin-top: 0;
+}
+
+.rows .column img:last-child {
+    margin-bottom: 0;
+}
+
+/* Light the way */
+.product-details-lights {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.product-details-lights .image-container {
+    display: flex;
+    justify-content: center;
+    /* height: 70%;
+    width: 70%; */
+}
+
+
+.product-details-lights .image-container img {
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+
+.product-details-lights .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-details-lights .text .head,
+.product-details-lights .text .description {
+    width: 50%;
+}
+
+.product-details-lights .text .head {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.product-details-lights .text .description {
+    margin-bottom: 30px;
+}
+
+/* Slick carousel */
+/* Defines the width of the carousel and centers it on the page */
+.homepage-customer-reviews .slick-carousel {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* The width of each slide */
+.homepage-customer-reviews .slick-slide {
+    width: 350px;
+}
+
+/* Color of the arrows */
+.homepage-customer-reviews .slick-next::before,
+.homepage-customer-reviews .slick-prev::before {
+    color: black
+}
+
+
+.homepage-customer-reviews .slick-slide .card-img-top {
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.homepage-customer-reviews .card ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homepage-customer-reviews .card li {
+    text-align: center;
+}
+
+
+.homepage-customer-reviews .card  {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* .homepage-customer-reviews .list-group-item-2  {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+} */
+
+
+
+.homepage-customer-reviews .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+
+    height: 600px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+
+
+}
+
+.homepage-customer-reviews .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.homepage-customer-reviews .card .card-body .user div {
+    font-weight: bold;
+}
+
+.homepage-customer-reviews .card ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.homepage-customer-reviews .title{
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Visit us! */
+.homepage-find-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+}
+
+.homepage-find-us .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.homepage-find-us .head h1 {
+    padding-bottom: 10px;
+}
+
+
+.homepage-find-us .info {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+
+
+
+
+
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+/* Styling */
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    /* $animationSpeed is replaced with the actual value */
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Testing Row 1 */
+#row1 .card {
+    height: 100%;
+    display: flex;
+
+}
+
+/* 
+
+@media (max-width: 576px){
+    #row1 .card {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+} */
+
+
+/**************** PRODUCT LIST /*****************/
+.product-details-product-list {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%
+}
+
+.product-details-product-list h1 {
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+/**************** PRODUCT DETAILS /*****************/
+
+
+/* Carousel for Product Details*/
+
+.productDetails {}
+
+
+.productDetails .carousel-indicators {
+    position: static;
+    margin-bottom: 50px;
+
+}
+
+.productDetails .carousel-indicators .active {
+    height: 100%;
+
+}
+
+.productDetails .productDetails .carousel-indicators button {
+    margin-top: 50px;
+    margin-bottom: 140px;
+}
+
+.productDetails .carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: transparent;
+}
+
+.productDetails .carousel-indicators button[data-bs-target] {
+    width: 200px;
+    background-color: transparent;
+}
+
+.productDetails .container {
+    margin-top: 5%;
+
+}
+
+
+/* Product details collage */
+.product-details-collage {
+    margin-top: 50px;
+}
+
+.product-details-collage .container {
+    padding: 5px
+}
+
+.product-details-collage .row {
+    margin: 5px;
+}
+
+
+.product-details-collage .container #row1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.product-details-collage .container #row2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120%;
+}
+
+.product-details-collage .container #row2 img {
+    height: 120%;
+}
+
+.product-details-collage .container img {
+    border-radius: 15px;
+}
+
+.product-details-collage .image-container {
+    position: relative;
+}
+
+.product-details-collage .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    /* Text color */
+    padding: 10px;
+    /* Adjust padding as needed */
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+.product-details-collage #text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.product-details-collage #text4 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.product-details-collage #text5 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+/* VIDEO */
+.product-details-video1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: black; */
+    /* height: 600px;
+    width: 1200px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.product-details-video1 video {
+    width: 85%;
+    height: 80%;
+}
+
+
+/* Owl carousel */
+.product-details-owl-carousel .text-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.product-details-owl-carousel .text {
+    padding-top: 30px;
+    width: 50%;
+}
+
+.product-details-owl-carousel .text .title {
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+.product-details-owl-carousel .text .description {
+    margin-bottom: 30px;
+
+}
+
+
+/* BMS BATTERY */
+
+.product-retails-BMS-battery {
+    position: relative;
+    width: 100%;
+
+}
+
+
+.product-retails-BMS-battery .container-fluid{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+
+}
+
+
+.product-retails-BMS-battery img{
+    width: 100%;
+height: 100%;
+}
+
+.product-retails-BMS-battery .body{
+    color: white;
+    position: absolute;
+    top: 10%;
+    left:10%;
+    width: 30%;
+}
+
+.product-retails-BMS-battery .body .title{
+    font-size: 30px;
+    font-weight: 700;
+    width: 90%;
+
+
+}
+
+.product-retails-BMS-battery .body .description{
+    margin-top: 50px;
+}
+
+.product-retails-BMS-battery .body .features{
+    margin-top: 110px;
+
+}
+
+.product-retails-BMS-battery .body .features .row{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.product-retails-BMS-battery .body .features .row .col-4 .image-container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+
+.product-retails-BMS-battery .body .features img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+/* Three layout */
+.product-details-three-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-details-three-layout #row0 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.product-details-three-layout #row1,
+.product-details-three-layout #row3 {
+    margin-left: 40%;
+}
+
+.product-details-three-layout #row1,
+.product-details-three-layout #row2,
+.product-details-three-layout #row3 {
+    width: 50%;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+/* PART 1 */
+
+.part1 {
+    margin-top: 8%;
+}
+
+
+/*Testing 4 square layout */
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.test .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.test .card-body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 15%;
+
+}
+
+#card1 {
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+#card2 {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+#img1 {
+    border-top-left-radius: 100px;
+
+}
+
+#img2 {
+    border-bottom-right-radius: 100px;
+
+}
+
+
+/* REVIEWS */
+.product-details-add-reviews .stars i {
+    color: #e6e6e6;
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.product-details-add-reviews .stars i.active {
+    color: #ff9c1a;
+}
+
+/* REVIEWS: WRITE A REVIEW */
+.product-details-write-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
+
+
+/*************  RESPONSIVE DESIGN ************/
+
+
+@media (max-width: 768px) {
+    #row1 .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #row1 .card img {
+        order: -1;
+        /* Move the image to the top on mobile */
+    }
+
+    #column {
+        margin-bottom: 15px;
+        border-radius: 20%;
+
+    }
+
+    /* /************  HOME PAGE ************/
+    .homepage-products-preview {
+        background-color: white;
+        margin-top: 0;
+        padding: 3%;
+    }
+
+    .homepage-products-preview .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+
+    .homepage-products-preview .card-img-container {
+        width: 40%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* TEST */
+    #card1 {
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+
+    #card2 {
+        display: flex;
+        flex: column;
+
+
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .test .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img2-1 {
+        order: -1;
+    }
+
+    #img1 {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+
+
+
+    }
+
+    #img2 {
+        border-bottom-right-radius: 0px;
+
+    }
+}
