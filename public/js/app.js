@@ -42,7 +42,7 @@ openFormModalButton.addEventListener('click', () => {
 const hiddenFormButton = document.querySelector('#hidden-form-button');
 const submitFormButton = document.querySelector('#submit-form')
 
-submitFormButton.addEventListener('click', ()=>{
+submitFormButton.addEventListener('click', () => {
     hiddenFormButton.click()
 })
 
@@ -68,9 +68,23 @@ $('.owl-carousel').owlCarousel({
 
 
 // ***********************Slick carousel***********************
+// partners
+
+$(document).ready(function () {
+    $('.slick-carousel-partners').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        arrows: true,
+
+    });
+});
 
 
-$(document).ready(function() {
+
+// customer review
+$(document).ready(function () {
 
     $('.slick-carousel').slick({
         infinite: true,
@@ -82,7 +96,7 @@ $(document).ready(function() {
     });
 });
 
-  
+
 
 // ***********************TOAST MESSAGE MODAL***********************
 const button = document.querySelector('#toastButton');

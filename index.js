@@ -54,6 +54,7 @@ mongoose.connect(dbUrl)
 // HOME: MY HOMEPAGE
 app.get('/home', async(req,res) =>{
     const products = await Product.find({})
+    console.log(products)
     res.render('home.ejs', {products})
 })
 

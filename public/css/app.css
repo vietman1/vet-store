@@ -201,8 +201,11 @@ body {
 
 
 
-
-
+/* Partners carousel slick-carousel */
+.homepage-partners-slick-carousel img{
+    height:100px;
+    width: 100px;
+}
 
 
 
