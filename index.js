@@ -49,7 +49,19 @@ mongoose.connect(dbUrl)
     })
 
 
+
+// test FB plug-in
+app.get('/facebook', (req,res) =>{
+    res.render('testFB.ejs')
+})
+
 //*************** PRODUCT ROUTES ***************
+
+app.get('/',async(req,res) =>{
+    const products = await Product.find({})
+    console.log(products)
+    res.render('home.ejs', {products})
+})
 
 // HOME: MY HOMEPAGE
 app.get('/home', async(req,res) =>{
