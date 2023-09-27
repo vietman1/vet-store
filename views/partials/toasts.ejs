@@ -16,51 +16,51 @@
 
 
 
-<div  class="btn btn-success" onclick="" id="toastButton">Toast me up</div>
+<div class="btn btn-success" onclick="" id="toastButton">Toast me up</div>
 
 
 <div aria-live="polite" aria-atomic="true" class="position-relative">
-    <!-- Position it: -->
-    <!-- - `.toast-container` for spacing between toasts -->
-    <!-- - `.position-absolute`, `top-0` & `end-0` to position the toasts in the upper right corner -->
-    <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11"">
-  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+  <!-- Position it: -->
+  <!-- - `.toast-container` for spacing between toasts -->
+  <!-- - `.position-absolute`, `top-0` & `end-0` to position the toasts in the upper right corner -->
+  <!-- - `.p-3` to prevent the toasts from sticking to the edge of the container  -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11"">
+  <div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="" class="rounded me-2" alt="...">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+  </div>
+  <!-- Then put toasts within -->
+  <div class="toast text-white bg-light" role="alert" aria-live="assertive" aria-atomic="true" id="EpicToast">
     <div class="toast-header">
       <img src="" class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
-      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      <strong class="me-auto">NEW SALES</strong>
+      <small class="text-muted">just now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="closeToast1"></button>
     </div>
-    <div class="toast-body">
-      Hello, world! This is a toast message.
+    <div class="toast-body text-success" style="font-size: 30px;">
+      Rosie just purchased 1 Mukuta 8
+    </div>
+  </div>
+
+  <div class="toast text-white bg-light" role="alert" aria-live="assertive" aria-atomic="true" id="EpicToast2">
+    <div class="toast-header" id="EpicToast">
+      <img src="" class="rounded me-2" alt="...">
+      <strong class="me-auto">NEW SALES</strong>
+      <small class="text-muted">2 seconds ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="closeToast2"></button>
+    </div>
+    <div class="toast-body text-success" style="font-size: 30px;">
+      Erik just purchased 1 Mukuta Pro Plus
     </div>
   </div>
 </div>
-      <!-- Then put toasts within -->
-      <div class="toast text-white bg-primary" role="alert" aria-live="assertive" aria-atomic="true" id="EpicToast">
-        <div class="toast-header">
-          <img src="" class="rounded me-2" alt="...">
-          <strong class="me-auto">New Sales</strong>
-          <small class="text-muted">just now</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="closeToast1"></button>
-        </div>
-        <div class="toast-body">
-          Rosie just bought 1 Mukuta Pro Plus
-        </div>
-      </div>
-  
-      <div class="toast text-white bg-primary" role="alert" aria-live="assertive" aria-atomic="true" id="EpicToast2">
-        <div class="toast-header" id="EpicToast">
-          <img src="" class="rounded me-2" alt="...">
-          <strong class="me-auto">New Sales</strong>
-          <small class="text-muted">2 seconds ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" id="closeToast2"></button>
-        </div>
-        <div class="toast-body">
-            Erik just bought 1 Mukuta Pro Plus
-        </div>
-      </div>
-    </div>
-  </div>
+</div>

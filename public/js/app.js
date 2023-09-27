@@ -3,6 +3,7 @@
 const ratings = document.querySelectorAll('.stars i')
 const inputRating = document.querySelector('#inputRating')
 
+console.log('TESTING APP.JS')
 
 
 
@@ -27,24 +28,7 @@ for (let eachRating of ratings) {
 }
 
 
-// ***********************FORM MODAL***********************
 
-const openFormModalButton = document.querySelector('#write-review-btn');
-const formModalHTMLElement = document.querySelector('#review-modal')
-
-openFormModalButton.addEventListener('click', () => {
-    const formModalElement = new bootstrap.Modal(formModalHTMLElement)
-    formModalElement.show()
-
-})
-
-// using the button in the modal instead of the form
-const hiddenFormButton = document.querySelector('#hidden-form-button');
-const submitFormButton = document.querySelector('#submit-form')
-
-submitFormButton.addEventListener('click', () => {
-    hiddenFormButton.click()
-})
 
 
 // ***********************Owl carousel***********************
@@ -115,7 +99,6 @@ button.addEventListener('click', () => {
 
 })
 
-console.log('TESTING APP.JS')
 
 const option = {
     animation: true,
@@ -183,89 +166,26 @@ for (let i = 1; i < 20; i++) {
 }
 
 
-// for (let i = 0; i < 20; i++) {
 
 
-//     const delay = 6000 * i;
-//     setTimeout(() => {
-//         if (close && close2 === false) {
-//             toasty2()
-//             console.log(`2st toast with i =  ${i} and delay = ${delay}`)
-//         }
+// ***********************FORM MODAL***********************
 
-//     }, delay);
+const openFormModalButton = document.querySelector('#write-review-btn');
+const formModalHTMLElement = document.querySelector('#review-modal')
 
-// }
+openFormModalButton.addEventListener('click', () => {
+    const formModalElement = new bootstrap.Modal(formModalHTMLElement)
+    formModalElement.show()
 
+})
 
+// using the button in the modal instead of the form
+const hiddenFormButton = document.querySelector('#hidden-form-button');
+const submitFormButton = document.querySelector('#submit-form')
 
-
-
-// for (let i= 0; i<20; i++){
-//     const delay = 11000 * i
-//     setTimeout(() =>{
-//         toasty2()
-//         console.log(`2st toast with i =  ${i} and delay = ${delay}`)
-//     }, delay + 2000 )
-
-// }
+submitFormButton.addEventListener('click', () => {
+    hiddenFormButton.click()
+})
 
 
-
-                                        //WRONG NEED TO ASK
-
-
-// const close = closeToast1.addEventListener(('click'), ()=>{
-//     console.log('closed')
-//     return true;
-// })
-
-
-
-// for (let i= 0; i<20; i++){
-//     if(close == true) {break;}
-//     const delay = 10000 * i;
-//     setTimeout(() =>{
-//         toasty()
-//         console.log(`1st toast with i =  ${i} and delay = ${delay}`)
-//     }, delay);
-//     // setTimeout(() =>{
-//     //     toasty2()
-//     //     console.log('2nd toast')
-//     // }, delay + 2000 )
-
-
-// }
-
-
-
-// THIS WORKS:
-
-
-// let stopToasts = false;
-
-// closeToast1.addEventListener('click', () => {
-//   console.log('closed');
-//   stopToasts = true;
-// });
-
-// function scheduleToasty(i) {
-//   if (stopToasts) {
-//     return; // Stop scheduling if the button is clicked
-//   }
-
-//   const delay = 1000 * i;
-//   setTimeout(() => {
-//     toasty();
-//     console.log(`1st toast with i = ${i} and delay = ${delay}`);
-//     scheduleToasty(i + 1); // Schedule the next toast
-//   }, delay);
-// }
-
-// scheduleToasty(0); // Start scheduling toasts
-
-
-
-
-// Form modals
 
