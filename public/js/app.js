@@ -115,7 +115,7 @@ button.addEventListener('click', () => {
 
 })
 
-
+console.log('TESTING APP.JS')
 
 const option = {
     animation: true,
@@ -180,16 +180,6 @@ for (let i = 1; i < 20; i++) {
         }
 
     }, delay);
-
-    // setTimeout(() => {
-    //     if (close2 === false) {
-    //         toasty2()
-    //         console.log(`2st toast with i =  ${i} and delay = ${delay}`)
-    //     }
-
-    // }, delay + 2);
-
-
 }
 
 
