@@ -746,7 +746,7 @@ width: 100%;
 
 
 
-/* Three layout */
+/* Three layout
 .product-details-three-layout {
     display: flex;
     flex-direction: column;
@@ -772,7 +772,7 @@ width: 100%;
     width: 50%;
     padding-left: 50px;
 }
-
+ */
 
 
 
@@ -784,6 +784,8 @@ width: 100%;
 .part1 {
     margin-top: 8%;
 }
+
+
 
 
 /*Testing 4 square layout */
@@ -813,7 +815,7 @@ width: 100%;
 
 }
 
-#card1 {
+/* #card1 {
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
 }
@@ -831,7 +833,9 @@ width: 100%;
 #img2 {
     border-bottom-right-radius: 100px;
 
-}
+} */
+
+
 
 
 /* REVIEWS */
