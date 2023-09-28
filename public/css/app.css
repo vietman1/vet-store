@@ -202,8 +202,8 @@ body {
 
 
 /* Partners carousel slick-carousel */
-.homepage-partners-slick-carousel img{
-    height:100px;
+.homepage-partners-slick-carousel img {
+    height: 100px;
     width: 100px;
 }
 
@@ -343,7 +343,7 @@ body {
 }
 
 
-.homepage-customer-reviews .card  {
+.homepage-customer-reviews .card {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -387,7 +387,7 @@ body {
 
 
 
-.homepage-customer-reviews .title{
+.homepage-customer-reviews .title {
     font-size: 30px;
     text-align: center;
     padding: 20px;
@@ -683,7 +683,7 @@ body {
 }
 
 
-.product-retails-BMS-battery .container-fluid{
+.product-retails-BMS-battery .container-fluid {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -692,20 +692,20 @@ body {
 }
 
 
-.product-retails-BMS-battery img{
+.product-retails-BMS-battery img {
     width: 100%;
-height: 100%;
+    height: 100%;
 }
 
-.product-retails-BMS-battery .body{
+.product-retails-BMS-battery .body {
     color: white;
     position: absolute;
     top: 10%;
-    left:10%;
+    left: 10%;
     width: 30%;
 }
 
-.product-retails-BMS-battery .body .title{
+.product-retails-BMS-battery .body .title {
     font-size: 30px;
     font-weight: 700;
     width: 90%;
@@ -713,29 +713,29 @@ height: 100%;
 
 }
 
-.product-retails-BMS-battery .body .description{
+.product-retails-BMS-battery .body .description {
     margin-top: 50px;
 }
 
-.product-retails-BMS-battery .body .features{
+.product-retails-BMS-battery .body .features {
     margin-top: 110px;
 
 }
 
-.product-retails-BMS-battery .body .features .row{
+.product-retails-BMS-battery .body .features .row {
     width: 100%;
     margin-top: 15px;
 }
 
-.product-retails-BMS-battery .body .features .row .col-4 .image-container{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
+.product-retails-BMS-battery .body .features .row .col-4 .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 
-.product-retails-BMS-battery .body .features img{
+.product-retails-BMS-battery .body .features img {
     width: 50px;
     height: 50px;
 }
@@ -785,7 +785,7 @@ width: 100%;
     margin-top: 50px;
 }
 
-.product-details-three-card-description .container{
+.product-details-three-card-description .container {
     margin-top: 50px;
 }
 
@@ -800,7 +800,7 @@ width: 100%;
     margin-bottom: 150px;
     /* margin-left:300px;
     margin-right:300px; */
-    
+
 
 }
 
@@ -867,6 +867,38 @@ width: 100%;
 }
 
 
+/*************  AUTHENTICATION FORMS ************/
+
+.authen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+
+
+}
+
+.authen h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.authentication-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border-color: black;
+    border-style: solid; */
+
+}
+
+.authentication-form input{
+    width: 280px;
+}
+
+
+/*************  NAV BAR  ************/
 
 
 
