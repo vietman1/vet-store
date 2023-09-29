@@ -223,7 +223,7 @@ app.post('/products/:id/reviews', async (req, res, next) => {
 
 
 
-app.listen('6969', (req, res) => {
+app.listen('80', (req, res) => {
     try {
         console.log('CONNECTED TO PORT 6969')
     } catch (err) {
