@@ -178,7 +178,7 @@ app.get('/products', async (req, res) => {
 app.get('/products/:id', async (req, res) => {
     try {
         const { id } = req.params;
-        console.log(`'${id}'`)
+        // console.log(`Product ID: '${id}'`)
         const product = await Product.findById(id).populate('reviews');
 
         //Rating is going to be the rating of each review, so it will have a value of 1-5. We then will run a loop to add icons equivalent to the rating value. So we create an empty variable - star,  then if a rating is 3 then we will add 3 lines of <i>...</i> (3 icons) to the stars, then return it in the end.
@@ -187,12 +187,34 @@ app.get('/products/:id', async (req, res) => {
             for (let i = 1; i <= rating; i++) {
                 stars += '<i class="fa-solid fa-thumbs-up"></i>';
             }
-            console.log(stars)
             return stars;
         }
 
+        const ejsTemplates = {
+            '64f05a89ace3b19c59c58f4e': 'show',
+            '64f05aecce0ae186641c786e': 'mukuta10dual',
+            '64f05b7d28fae60a17c3ea24': 'mukuta10single',
+            '64f0a467290d42d881c6793e': 'mukuta9plus',
+            '64f0a46ad9417ed7ba209cb7': 'mukuta9',
+            '64f0a4f5c40e56e5aba76e12': 'mukuta8plus',
+            '64f1b63aad6902e3ffe39c43': 'mukukuta8'
+        }
 
-        res.render('products/show.ejs', { product, getStarIcons })
+        const productID = product._id.toString()
+        console.log(productID)
+        const foundTemplate = ejsTemplates[productID];
+        console.log(`found template id ${foundTemplate}`)
+
+        res.render(`products/${foundTemplate}`,{product, getStarIcons})
+
+
+
+
+
+    
+
+
+        // res.render('products/show.ejs', { product, getStarIcons })
     } catch (err) {
         console.log(err)
     }

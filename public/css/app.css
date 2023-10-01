@@ -511,10 +511,10 @@ body {
 
 /**************** PRODUCT DETAILS /*****************/
 
+/* MUKUTA 10 plus*/
+
 
 /* Carousel for Product Details*/
-
-/* .productDetails {} */
 
 
 .productDetails .carousel-indicators {
@@ -746,37 +746,6 @@ body {
 
 
 
-/* Three layout
-.product-details-three-layout {
-    display: flex;
-    flex-direction: column;
-}
-
-.product-details-three-layout #row0 {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px;
-}
-
-.product-details-three-layout #row1,
-.product-details-three-layout #row3 {
-    margin-left: 40%;
-}
-
-.product-details-three-layout #row1,
-.product-details-three-layout #row2,
-.product-details-three-layout #row3 {
-    width: 50%;
-    padding-left: 50px;
-}
- */
-
-
-
-
 
 
 /* PART 1 */
@@ -844,8 +813,6 @@ body {
 }
 
 
-
-
 /* REVIEWS */
 .product-details-add-reviews .stars i {
     color: #e6e6e6;
@@ -867,6 +834,54 @@ body {
 }
 
 
+
+
+/*************  PRODUCT DETAILS FOR ALL PRODUCTS  ************/
+ .product-details-one {
+    width: 600px;
+    margin: 300px
+}
+
+
+
+.product-details-one button {
+    background-color: #ff9c1a;
+
+}
+
+
+.product-details-one .slick-track .slick-slide{
+    display: flex;
+    justify-content: center;
+}
+
+.product-details-one .slider-for  {
+
+}
+
+.product-details-one .slider-for img {
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+.product-details-one .slider-nav {}
+
+.product-details-one .slider-nav div {
+
+
+}
+
+
+.product-details-one .slider-nav img {
+    height: 150px;
+    width: 150px;
+
+}
+ 
 /*************  AUTHENTICATION FORMS ************/
 
 .authen {
@@ -893,7 +908,7 @@ body {
 
 }
 
-.authentication-form input{
+.authentication-form input {
     width: 280px;
 }
 

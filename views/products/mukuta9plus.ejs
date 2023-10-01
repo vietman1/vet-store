@@ -1,0 +1,53 @@
+<% layout('layouts/boilerplate.ejs') %>
+<h1><%=product.name %></h1>
+
+<section class="product-details-one" >
+    <div class="slider-for">
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000522/VetStore/products-lists/mukuta9plus/MUKUTA9Plus_3_1_kvc1ik.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000519/VetStore/products-lists/mukuta9plus/IMGL7193_jaazju.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000524/VetStore/products-lists/mukuta9plus/IMGL7342_xt8aqm.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000523/VetStore/products-lists/mukuta9plus/IMGL7343_hajup3.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000521/VetStore/products-lists/mukuta9plus/IMGL7443_d5nhf1.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000524/VetStore/products-lists/mukuta9plus/mukuta9plus_twhogj.png" alt=""></div>
+ 
+    </div>
+
+    <div class="slider-nav">
+
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000522/VetStore/products-lists/mukuta9plus/MUKUTA9Plus_3_1_kvc1ik.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000519/VetStore/products-lists/mukuta9plus/IMGL7193_jaazju.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000524/VetStore/products-lists/mukuta9plus/IMGL7342_xt8aqm.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000523/VetStore/products-lists/mukuta9plus/IMGL7343_hajup3.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000521/VetStore/products-lists/mukuta9plus/IMGL7443_d5nhf1.png" alt=""></div>
+        <div><img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696000524/VetStore/products-lists/mukuta9plus/mukuta9plus_twhogj.png" alt=""></div>
+
+    </div>
+
+</section>
+
+    <!-- Write a review button to open form modal -->
+    <div class="product-details-write-reviews">
+        <h1>Reviews</h1>
+        <button class="btn-success" id="write-review-btn">Write a review</button>
+    </div>
+
+    <!-- Form modal -->
+    <%- include('../partials/reviewform.ejs') %>
+
+        <!-- View all reviews submitted by users -->
+        <section class="product-details-view-reviews">
+
+            <% for(let eachReview of product.reviews){%>
+
+                <div class="card" ">
+        <img src="" class=" card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Name: <%=eachReview.name%>
+                        </h5>
+                        <div> Rating: <span style="color: #ff9c1a;letter-spacing: 3px;"> <%-
+                                    getStarIcons(eachReview.rating) %> </span> </div>
+                        <p class="card-text"> Comments <%=eachReview.body%>
+                        </p>
+                    </div>
+                    <%}%>
+        </section>

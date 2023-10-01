@@ -3,7 +3,7 @@
 const ratings = document.querySelectorAll('.stars i')
 const inputRating = document.querySelector('#inputRating')
 
-console.log('TESTING APP.JS')
+console.log('START OF JS SCRIPT')
 
 
 
@@ -81,23 +81,32 @@ $(document).ready(function () {
 });
 
 
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    focusOnSelect: true
+});
 
-// ***********************TOAST MESSAGE MODAL***********************
+
+
+// ***********************TOAST MESSAGE MODAL***********************      NEED TO REDO
+
+
+
 const button = document.querySelector('#toastButton');
 const closeToast1 = document.querySelector('#closeToast1')
 const closeToast2 = document.querySelector('#closeToast2')
 
-
-button.addEventListener('click', () => {
-    setTimeout(() => {
-        toasty()
-    }, 2000);
-
-    setTimeout(() => {
-        toasty2()
-    }, 4000)
-
-})
+if(button){
 
 
 const option = {
@@ -123,6 +132,11 @@ function toasty2() {
     toastElement2.show()
 }
 
+
+
+const closeToast1 = document.querySelector('#closeToast1')
+const closeToast2 = document.querySelector('#closeToast2')
+
 // Close button
 let close = false;
 closeToast1.addEventListener(('click'), () => {
@@ -131,11 +145,13 @@ closeToast1.addEventListener(('click'), () => {
     close = true
 })
 
+
 let close2 = false;
 closeToast2.addEventListener(('click'), () => {
     console.log(`closing 2`)
     close2 = true
 })
+
 
 
 setTimeout(() => {
@@ -165,6 +181,11 @@ for (let i = 1; i < 20; i++) {
     }, delay);
 }
 
+} else {
+    () => {
+        return
+    }
+}
 
 
 
@@ -173,19 +194,26 @@ for (let i = 1; i < 20; i++) {
 const openFormModalButton = document.querySelector('#write-review-btn');
 const formModalHTMLElement = document.querySelector('#review-modal')
 
-openFormModalButton.addEventListener('click', () => {
-    const formModalElement = new bootstrap.Modal(formModalHTMLElement)
-    formModalElement.show()
+if (openFormModalButton) {
+    openFormModalButton.addEventListener('click', () => {
+        const formModalElement = new bootstrap.Modal(formModalHTMLElement)
+        formModalElement.show()
 
-})
+    })
 
-// using the button in the modal instead of the form
-const hiddenFormButton = document.querySelector('#hidden-form-button');
-const submitFormButton = document.querySelector('#submit-form')
+    // using the button in the modal instead of the form
+    const hiddenFormButton = document.querySelector('#hidden-form-button');
+    const submitFormButton = document.querySelector('#submit-form')
 
-submitFormButton.addEventListener('click', () => {
-    hiddenFormButton.click()
-})
+    submitFormButton.addEventListener('click', () => {
+        hiddenFormButton.click()
+    })
+} else {
+    () => {
+        return
+    }
+}
 
 
+console.log('END OF JS SCRIPT')
 
