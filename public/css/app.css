@@ -837,20 +837,62 @@ body {
 
 
 /*************  PRODUCT DETAILS FOR ALL PRODUCTS  ************/
- .product-details-one {
-    width: 600px;
-    margin: 300px
+
+
+.product-details-first-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* #product-details-section-one-b{
+    display: flex;
+} */
+
+.product-details-description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.product-details-description .product-name{
+    font-size: 2.5rem;
+}
+
+.product-details-description p {
+    width: 80%;
+}
+
+.product-details-description table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 80%;
+
+}
+
+.product-details-description table td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
 }
 
 
 
-.product-details-one button {
+
+.product-details-carousel {}
+
+
+
+.product-details-carousel button {
     background-color: #ff9c1a;
 
 }
 
 
-.product-details-one .slick-track .slick-slide{
+.product-details-carousel .slick-track .slick-slide {
     display: flex;
     justify-content: center;
 }
@@ -859,8 +901,8 @@ body {
 
 } */
 
-.product-details-one .slider-for img {
-    width: 400px;
+.product-details-carousel .slider-for img {
+    width: 550px;
     height: 400px;
 }
 
@@ -876,12 +918,12 @@ body {
 } */
 
 
-.product-details-one .slider-nav img {
+.product-details-carousel .slider-nav img {
     height: 150px;
     width: 150px;
 
 }
- 
+
 /*************  AUTHENTICATION FORMS ************/
 
 .authen {
@@ -920,6 +962,20 @@ body {
 /*************  RESPONSIVE DESIGN ************/
 
 
+@media (max-width: 576px) {
+    
+.homepage-hero .body .text {
+    font-style: italic;
+    font-size: 15px !important;
+    color:#ff9c1a
+}
+
+
+
+
+}
+
+
 @media (max-width: 768px) {
     #row1 .card {
         height: 100%;
@@ -939,6 +995,10 @@ body {
     }
 
     /* /************  HOME PAGE ************/
+
+
+
+
     .homepage-products-preview {
         background-color: white;
         margin-top: 0;
