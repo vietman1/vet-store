@@ -4,7 +4,7 @@ const app = express()
 const methodOverride = require('method-override')
 app.use(methodOverride('_method'))
 
-//EJS
+//EJSs
 app.set('view engine', 'ejs')
 const path = require('path');
 app.set('views', path.join(__dirname, 'views'))
