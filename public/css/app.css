@@ -882,14 +882,12 @@ body {
 
 
 
-.product-details-carousel {}
-
-
-
-.product-details-carousel button {
-    background-color: #ff9c1a;
-
+.product-details-carousel .slick-next::before,
+.product-details-carousel .slick-prev::before {
+    color: black;
 }
+
+
 
 
 .product-details-carousel .slick-track .slick-slide {
@@ -963,7 +961,8 @@ body {
 
 
 @media (max-width: 576px) {
-    
+
+/* not working */
 .homepage-hero .body .text {
     font-style: italic;
     font-size: 15px !important;
