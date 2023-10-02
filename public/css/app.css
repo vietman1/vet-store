@@ -839,7 +839,7 @@ body {
 /*************  PRODUCT DETAILS FOR ALL PRODUCTS  ************/
 
 
-.product-details-first-section{
+.product-details-first-section {
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -856,7 +856,7 @@ body {
 
 }
 
-.product-details-description .product-name{
+.product-details-description .product-name {
     font-size: 2.5rem;
 }
 
@@ -981,105 +981,126 @@ body {
 
 @media (max-width: 640px) {
 
-/*************  HOME PAGE  ************/
-/* Hero page */
-.homepage-hero .body {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    background: rgba(0, 0, 0, 0);
-    /* You can adjust the background color and opacity */
-    color: black;
-    /* Text color */
-    padding: 5px;
-    /* Add padding to the text */
-    box-sizing: border-box;
-}
+    /*************  HOME PAGE  ************/
+    /* Hero page */
+    .homepage-hero .body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        background: rgba(0, 0, 0, 0);
+        /* You can adjust the background color and opacity */
+        color: black;
+        /* Text color */
+        padding: 5px;
+        /* Add padding to the text */
+        box-sizing: border-box;
+    }
 
 
-.homepage-hero .body .brand {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    height: 50%;
-}
+    .homepage-hero .body .brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        height: 50%;
+    }
 
-.homepage-hero .body .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 40%;
-    width: 80%;
-    text-align: left;
-}
+    .homepage-hero .body .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40%;
+        width: 80%;
+        text-align: left;
+    }
 
-.homepage-hero .body .text .title {
-    font-size: 20px;
-    padding-bottom: 15px;
-}
+    .homepage-hero .body .text .title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
 
-.homepage-hero .body .text .description {
-    width: 80%;
-    font-size: 10px;
-}
+    .homepage-hero .body .text .description {
+        width: 80%;
+        font-size: 10px;
+    }
 
-.homepage-hero .body .text .btn {
-    margin-top: 10px;
-    /* width: 10px;
+    .homepage-hero .body .text .btn {
+        margin-top: 10px;
+        /* width: 10px;
     height: 50%; */
 
-    width: 40%;
+        width: 40%;
 
-    white-space: nowrap;
-    font-size: 10px;
-    font-weight: bold;
-    text-align: center;
-    
-}
+        white-space: nowrap;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
 
-
-.homepage-find-us iframe{
-    width: 80%;
-}
-
-/* Products list */
-.homepage-products-preview .m-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-bottom: 10%; /* Adjust the percentage as needed */
-
-    &::before {
-        content: "";
-        width: 50%; /* Adjust the width as needed */
-        height: 1px; /* Border height */
-        background-color: gray; /* Border color */
-        position: absolute;
-        bottom: 0;
     }
+
+    /* Products list */
+    .homepage-products-preview .m-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10%;
+        /* Adjust the percentage as needed */
+
+        &::before {
+            content: "";
+            width: 50%;
+            /* Adjust the width as needed */
+            height: 1px;
+            /* Border height */
+            background-color: gray;
+            /* Border color */
+            position: absolute;
+            bottom: 0;
+        }
+
+
+    }
+
+/* Partners */
+.homepage-partners .text{
+    padding-bottom: 40px;
 }
 
-
-/*************  Product details  ************/
-
-/* Show.ejs (mkt10plus)  */
-
-.product-details-collage .col-md-6{
-    margin-top: 20px ;
+.homepage-partners .row .col-4{
+    margin-bottom: 20px;
 }
+    
+    /* Customer review */
 
-.product-details-collage .col-md-4{
-    margin-bottom: 20px ;
-}
+
+
+
+
+    /* Find us - Map */
+    .homepage-find-us iframe {
+        width: 80%;
+    }
+
+
+    /*************  Product details  ************/
+
+    /* Show.ejs (mkt10plus)  */
+
+    .product-details-collage .col-md-6 {
+        margin-top: 20px;
+    }
+
+    .product-details-collage .col-md-4 {
+        margin-bottom: 20px;
+    }
 
 
 }
