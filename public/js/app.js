@@ -117,7 +117,7 @@ $(document).ready(function () {
 
 
 
-//Product details - 1st review carousel
+//Product details - 1st section product review carousel
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -130,7 +130,17 @@ $('.slider-nav').slick({
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+        {
+          breakpoint: 624,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        }]
 });
 
 

@@ -1069,15 +1069,15 @@ body {
 
     }
 
-/* Partners */
-.homepage-partners .text{
-    padding-bottom: 40px;
-}
+    /* Partners */
+    .homepage-partners .text {
+        padding-bottom: 40px;
+    }
 
-.homepage-partners .row .col-4{
-    margin-bottom: 20px;
-}
-    
+    .homepage-partners .row .col-4 {
+        margin-bottom: 20px;
+    }
+
     /* Customer review */
 
 
@@ -1102,6 +1102,29 @@ body {
         margin-bottom: 20px;
     }
 
+
+
+    /* 1 Template for all products */
+    #product-details-section-one-a {
+        padding-right: 30px;
+        ;
+        padding-left: 30px;
+    }
+
+    .product-details-first-section .product-details-carousel .slider-nav img {
+        padding: 15px;
+
+    }
+
+
+    #product-details-section-one-b{
+        padding-top: 30px
+    }
+
+    #product-details-section-one-b .product-name {
+        font-size: 2rem;
+        text-align: center;
+    }
 
 }
 
