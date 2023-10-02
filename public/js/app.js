@@ -70,17 +70,54 @@ $(document).ready(function () {
 // customer review
 $(document).ready(function () {
 
-    $('.slick-carousel').slick({
+    $('.slick-carousel-customer-reviews').slick({
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToShow: 5,
+        slidesToScroll: 5,
         arrows: true,
         dots: false,
-        autoplay: false
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4
+                }
+              },
+
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+
+
+
     });
 });
 
 
+
+
+//Product details - 1st review carousel
 $('.slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -89,7 +126,7 @@ $('.slider-for').slick({
     asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: true,
@@ -106,80 +143,80 @@ const button = document.querySelector('#toastButton');
 const closeToast1 = document.querySelector('#closeToast1')
 const closeToast2 = document.querySelector('#closeToast2')
 
-if(button){
+if (button) {
 
 
-const option = {
-    animation: true,
-    delay: 4000
-};
+    const option = {
+        animation: true,
+        delay: 4000
+    };
 
 
-function toasty() {
-    const toastHTMLElement = document.getElementById("EpicToast");
+    function toasty() {
+        const toastHTMLElement = document.getElementById("EpicToast");
 
-    const toastElement = new bootstrap.Toast(toastHTMLElement, option)
-
-
-    toastElement.show()
-}
-
-function toasty2() {
-    const toastHTMLElement2 = document.getElementById("EpicToast2");
-
-    const toastElement2 = new bootstrap.Toast(toastHTMLElement2, option)
-
-    toastElement2.show()
-}
+        const toastElement = new bootstrap.Toast(toastHTMLElement, option)
 
 
+        toastElement.show()
+    }
 
-const closeToast1 = document.querySelector('#closeToast1')
-const closeToast2 = document.querySelector('#closeToast2')
+    function toasty2() {
+        const toastHTMLElement2 = document.getElementById("EpicToast2");
 
-// Close button
-let close = false;
-closeToast1.addEventListener(('click'), () => {
-    console.log(`closing 1`)
+        const toastElement2 = new bootstrap.Toast(toastHTMLElement2, option)
 
-    close = true
-})
-
-
-let close2 = false;
-closeToast2.addEventListener(('click'), () => {
-    console.log(`closing 2`)
-    close2 = true
-})
+        toastElement2.show()
+    }
 
 
 
-setTimeout(() => {
-    console.log('Restarting the toast spam')
-    close = false;
-    close2 = false;
+    const closeToast1 = document.querySelector('#closeToast1')
+    const closeToast2 = document.querySelector('#closeToast2')
+
+    // Close button
+    let close = false;
+    closeToast1.addEventListener(('click'), () => {
+        console.log(`closing 1`)
+
+        close = true
+    })
 
 
-}, 60000 * 2)
+    let close2 = false;
+    closeToast2.addEventListener(('click'), () => {
+        console.log(`closing 2`)
+        close2 = true
+    })
 
 
-for (let i = 1; i < 20; i++) {
 
-
-    const delay = 5000 * i;
     setTimeout(() => {
-        if (close === false && close2 === false) {
-            toasty()
-            console.log(`1st toast with i =  ${i} and delay = ${delay}`);
+        console.log('Restarting the toast spam')
+        close = false;
+        close2 = false;
 
-            setTimeout(() => {
-                toasty2();
-                console.log(`2nd toast with i =  ${i} and delay = ${delay - 2000}`)
-            }, delay - 2000)
-        }
 
-    }, delay);
-}
+    }, 60000 * 2)
+
+
+    for (let i = 1; i < 20; i++) {
+
+
+        const delay = 5000 * i;
+        setTimeout(() => {
+            if (close === false && close2 === false) {
+                toasty()
+                console.log(`1st toast with i =  ${i} and delay = ${delay}`);
+
+                setTimeout(() => {
+                    toasty2();
+                    console.log(`2nd toast with i =  ${i} and delay = ${delay - 2000}`)
+                }, delay - 2000)
+            }
+
+        }, delay);
+    }
 
 } else {
     () => {
