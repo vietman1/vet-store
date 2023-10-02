@@ -197,7 +197,7 @@ app.get('/products/:id', async (req, res) => {
             '64f0a467290d42d881c6793e': 'mukuta9plus',
             '64f0a46ad9417ed7ba209cb7': 'mukuta9',
             '64f0a4f5c40e56e5aba76e12': 'mukuta8plus',
-            '64f1b63aad6902e3ffe39c43': 'mukukuta8'
+            '64f1b63aad6902e3ffe39c43': 'mukuta8'
         }
 
         const productID = product._id.toString()
