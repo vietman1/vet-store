@@ -1045,6 +1045,10 @@ body {
 }
 
 
+.homepage-find-us iframe{
+    width: 80%;
+}
+
 /* Products list */
 .homepage-products-preview .m-1{
     display: flex;
