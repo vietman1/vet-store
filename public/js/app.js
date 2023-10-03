@@ -73,18 +73,11 @@ $(document).ready(function () {
     $('.slick-carousel-customer-reviews').slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         arrows: true,
         dots: false,
         autoplay: false,
         responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 4
-                }
-              },
 
             {
                 breakpoint: 768,
