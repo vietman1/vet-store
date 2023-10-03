@@ -1034,6 +1034,38 @@ body {
 
     }
 
+
+
+    
+    /* Products list */
+    .homepage-products-preview .m-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10%;
+        /* Adjust the percentage as needed */
+
+        &::before {
+            content: "";
+            width: 50%;
+            /* Adjust the width as needed */
+            height: 1px;
+            /* Border height */
+            background-color: gray;
+            /* Border color */
+            position: absolute;
+            bottom: 0;
+        }
+
+
+    }
+
+    .homepage-products-preview .card-img-container {
+        width: 45% !important;
+    }
+        
 }
 
 
@@ -1128,6 +1160,11 @@ body {
 
 
     }
+
+    .homepage-products-preview .card-img-container {
+        width: 65% !important;
+    }
+        
 
     /* Partners */
     .homepage-partners .text {
