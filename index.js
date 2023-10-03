@@ -170,7 +170,7 @@ app.get('/about', async (req, res) => {
 
 //APP: SHOW ALL PRODUCTS
 app.get('/products', async (req, res) => {
-    const products = await Product.find({})
+    const products = await Product.find({}).sort({ name: 1 }); // Sort by name in ascending order
     res.render('products/products.ejs', { products })
 
 })
