@@ -157,7 +157,9 @@ app.get('/', async (req, res) => {
 
 // HOME: MY HOMEPAGE
 app.get('/home', async (req, res) => {
-    const products = await Product.find({})
+    // const products = await Product.find({})
+    const products = await Product.find({}).sort({ name: 1 }); // Sort by name in ascending order
+
     res.render('products/home.ejs', { products })
 })
 
