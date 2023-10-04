@@ -146,6 +146,10 @@ body {
     background-color: white;
 }
 
+.homepage-partners {
+    text-align: center;
+}
+
 .homepage-partners .col-2 {
     text-align: center;
     margin-bottom: 50px;
@@ -979,95 +983,86 @@ body {
 /*************  RESPONSIVE DESIGN ************/
 
 
-@media (max-width: 410px) {
 
-    /* Hero page */
-    .homepage-hero .body {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 70% !important;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-        background: rgba(0, 0, 0, 0);
-        color: black;
-        /* Text color */
-        padding: 5px;
-        /* Add padding to the text */
-        box-sizing: border-box;
+
+
+@media (max-width: 768px) {
+
+
+    /* /************  HOME PAGE ************/
+
+
+
+
+    .homepage-products-preview {
+        background-color: white;
+        margin-top: 0;
+        padding: 3%;
     }
 
-
-    .homepage-hero .body .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-        width: 90%;
-        text-align: left;
-    }
-
-    .homepage-hero .body .text .title {
-        font-size: 18px !important;
-        padding-bottom: 8px !important;
+    .homepage-products-preview .card {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
 
     }
 
-    .homepage-hero .body .text .description {
-        width: 80%;
-        font-size: 10px !important;
-    }
-
-    .homepage-hero .body .text .btn {
-        margin-top: 10px;
-
-        width: 40%;
-
-        white-space: nowrap;
-        font-size: 10px;
-        font-weight: bold;
-        text-align: center;
-
-    }
-
-
-
-    
-    /* Products list */
-    .homepage-products-preview .m-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding-bottom: 10%;
-        /* Adjust the percentage as needed */
-
-        &::before {
-            content: "";
-            width: 50%;
-            /* Adjust the width as needed */
-            height: 1px;
-            /* Border height */
-            background-color: gray;
-            /* Border color */
-            position: absolute;
-            bottom: 0;
-        }
-
-
-    }
 
     .homepage-products-preview .card-img-container {
-        width: 45% !important;
-    }
-        
-}
+        width: 40%;
 
+    }
+
+
+
+    /* Show: Mukuta 10 plus */
+    .product-details-lights .text {}
+
+    .product-details-lights .text .head {
+        width: 80%;
+
+    }
+
+    .product-details-lights .text .description {
+        width: 80%;
+
+    }
+
+    .product-details-lights .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details-lights .image-container img {
+        width: 80%;
+    }
+
+    /* 6pics layout */
+    #card1{
+        border-radius: 0;
+    }
+    
+    #img1{
+        border-radius: 0;
+    }
+
+    #img2-1 {
+        order: -1;
+    }
+
+
+    #card4{
+        border-radius: 0;
+    }
+    #img4-1 {
+        order: -1;
+    }
+    #img4{
+        border-radius: 0;
+
+    }
+}
 
 
 
@@ -1113,13 +1108,13 @@ body {
     }
 
     .homepage-hero .body .text .title {
-        font-size: 20px;
+        font-size: 25px;
         padding-bottom: 15px;
     }
 
     .homepage-hero .body .text .description {
         width: 80%;
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .homepage-hero .body .text .btn {
@@ -1130,7 +1125,7 @@ body {
         width: 40%;
 
         white-space: nowrap;
-        font-size: 10px;
+        font-size: 12px;
         font-weight: bold;
         text-align: center;
 
@@ -1162,9 +1157,9 @@ body {
     }
 
     .homepage-products-preview .card-img-container {
-        width: 65% !important;
+        width: 65%
     }
-        
+
 
     /* Partners */
     .homepage-partners .text {
@@ -1225,52 +1220,218 @@ body {
 
 }
 
+@media (max-width: 500px) {
+
+    /* Hero page */
 
 
+    .homepage-hero .body .text .title {
+        font-size: 17px;
+        padding-bottom: 15px;
+        width: 80%;
 
-@media (max-width: 768px) {
-    #row1 .card {
+    }
+
+    .homepage-hero .body .text .description {
+        width: 90%;
+        font-size: 12px
+    }
+
+    .homepage-hero .body .text .btn {
+        margin-top: 8px;
+
+        width: 40%;
+
+        white-space: nowrap;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+
+    /* Products list */
+    .homepage-products-preview .m-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10%;
+        /* Adjust the percentage as needed */
+
+        &::before {
+            content: "";
+            width: 50%;
+            /* Adjust the width as needed */
+            height: 1px;
+            /* Border height */
+            background-color: gray;
+            /* Border color */
+            position: absolute;
+            bottom: 0;
+        }
+
+
+    }
+
+    .homepage-products-preview .card-img-container {
+        width: 65%
+    }
+
+
+}
+
+@media (max-width: 430px) {
+
+    /* Hero page */
+    .homepage-hero .body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
         height: 100%;
         display: flex;
         flex-direction: column;
-    }
-
-    #row1 .card img {
-        order: -1;
-        /* Move the image to the top on mobile */
-    }
-
-    #column {
-        margin-bottom: 15px;
-        border-radius: 20%;
-
-    }
-
-    /* /************  HOME PAGE ************/
-
-
-
-
-    .homepage-products-preview {
-        background-color: white;
-        margin-top: 0;
-        padding: 3%;
-    }
-
-    .homepage-products-preview .card {
-        display: flex;
-        flex-direction: row;
         align-items: center;
-
+        justify-content: space-evenly;
+        text-align: center;
+        background: rgba(0, 0, 0, 0);
+        color: black;
+        /* Text color */
+        padding: 5px;
+        /* Add padding to the text */
+        box-sizing: border-box;
     }
 
 
-    .homepage-products-preview .card-img-container {
+    .homepage-hero .body .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 90%;
+        text-align: left;
+    }
+
+    .homepage-hero .body .text .title {
+        font-size: 16px;
+        padding-bottom: 8px;
+
+    }
+
+    .homepage-hero .body .text .description {
+        width: 70%;
+        font-size: 10px;
+    }
+
+    .homepage-hero .body .text .btn {
+        margin-top: 10px;
+
         width: 40%;
 
+        white-space: nowrap;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+
     }
 
 
+    /* Products list */
+    .homepage-products-preview .m-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10%;
+        /* Adjust the percentage as needed */
+
+        &::before {
+            content: "";
+            width: 50%;
+            /* Adjust the width as needed */
+            height: 1px;
+            /* Border height */
+            background-color: gray;
+            /* Border color */
+            position: absolute;
+            bottom: 0;
+        }
+
+
+    }
+
+    .homepage-products-preview .card-img-container {
+        width: 65%
+    }
+
+}
+
+
+
+@media (max-width: 396px) {
+
+    /* Hero page */
+
+
+    .homepage-hero .body .text .title {
+        font-size: 16px;
+        padding-bottom: 2px;
+        width: 70%;
+
+    }
+
+    .homepage-hero .body .text .description {
+        width: 70%;
+        font-size: 9px
+    }
+
+    .homepage-hero .body .text .btn {
+        margin-top: 8px;
+
+        width: 40%;
+
+        white-space: nowrap;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+
+    /* Products list */
+    .homepage-products-preview .m-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 10%;
+        /* Adjust the percentage as needed */
+
+        &::before {
+            content: "";
+            width: 50%;
+            /* Adjust the width as needed */
+            height: 1px;
+            /* Border height */
+            background-color: gray;
+            /* Border color */
+            position: absolute;
+            bottom: 0;
+        }
+
+
+    }
+
+    .homepage-products-preview .card-img-container {
+        width: 65%
+    }
+
+
+}
 
 
 
@@ -1290,8 +1451,8 @@ body {
 
 
 
-    /* TEST */
-    #card1 {
+/* TEST */
+/* #card1 {
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
     }
@@ -1325,5 +1486,4 @@ body {
     #img2 {
         border-bottom-right-radius: 0px;
 
-    }
-}
+    } */
