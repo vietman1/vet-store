@@ -158,7 +158,8 @@ app.get('/', async (req, res) => {
 // HOME: MY HOMEPAGE
 app.get('/home', async (req, res) => {
     // const products = await Product.find({})
-    const products = await Product.find({}).sort({ name: 1 }); // Sort by name in ascending order
+    const products = await Product.find({}).sort({ name: 1 }).lean(); // Sort by name in ascending order
+    console.log(products)
 
     res.render('products/home.ejs', { products })
 })
@@ -170,7 +171,9 @@ app.get('/about', async (req, res) => {
 
 //APP: SHOW ALL PRODUCTS
 app.get('/products', async (req, res) => {
-    const products = await Product.find({}).sort({ name: 1 }); // Sort by name in ascending order
+    const products = await Product.find({}).sort({ name: 1 }).lean(); // Sort by name in ascending order
+    console.log(products)
+
     res.render('products/products.ejs', { products })
 
 })
