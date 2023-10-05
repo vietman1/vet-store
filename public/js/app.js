@@ -65,6 +65,36 @@ $(document).ready(function () {
     });
 });
 
+$('.partners-carousel-new').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 100,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      }
+
+    ]
+  });
+
+
+
 
 
 // customer review

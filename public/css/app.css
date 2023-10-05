@@ -137,78 +137,48 @@ body {
 }
 
 /* Partners */
-.homepage-partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    background-color: white;
-}
 
-.homepage-partners {
+
+/* Testing new partners carousel */
+
+.partners {
     text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
-.homepage-partners .col-2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.homepage-partners img {
-    height: 100px;
-    width: 100px;
-}
-
-.homepage-partners .text {
-    font-size: 30px;
-    padding-bottom: 50px;
-}
-
-
-
-
-
-
-/* Partners Carousel */
-.homepage-partners-carousel {
-    align-items: center;
-    background: #E3E3E3;
+.partners .slick-slide{
     display: flex;
-    height: 10vh;
     justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 100%;
-}
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
 }
 
 
+.partners .text{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    
 
-/* Partners carousel slick-carousel */
-.homepage-partners-slick-carousel img {
-    height: 100px;
-    width: 100px;
+}
+
+
+.partners-carousel-new{
+    display:flex;
+    justify-content: center;
+}
+
+
+.partners-carousel-new{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.partners-carousel-new img{
+    width: 160px;
+    height: 160px;
 }
 
 
@@ -1365,6 +1335,30 @@ body {
 
     .homepage-products-preview .card-img-container {
         width: 65%
+    }
+
+
+    /* Partners */
+    .partners-carousel-new img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .partners {
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    
+    
+    .partners .text{
+        font-size: 25px;
+        margin-bottom: 30px;
+
+
+        
+    
     }
 
 }
