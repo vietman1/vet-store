@@ -79,7 +79,7 @@ $('.partners-carousel-new').slick({
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
