@@ -52,6 +52,26 @@ $('.owl-carousel').owlCarousel({
 
 
 // ***********************Slick carousel***********************
+
+// Our products
+
+$(document).ready(function () {
+
+    $('.slick-carousel-our-products').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        
+
+
+
+    });
+});
+
+
 // partners
 
 $(document).ready(function () {

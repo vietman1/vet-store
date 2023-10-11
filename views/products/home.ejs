@@ -72,88 +72,78 @@
     </section>
 
 
-    <!-- Products preview -->
-    <section class="homepage-products-preview">
+    <!-- OUR PRODUCTS -->
+
+    <div class="homepage-our-products container">
+
         <div class="title">
             <h5>OUR PRODUCTS</h5>
             <h1>A choice for everyone</h1>
         </div>
-        <div class="container-fluid">
-            <div class="row text-center ">
 
-                <% for (let i=0; i<3; i++){ %>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
+        <div class="container slick-carousel-our-products ">
+
+            <% for (let eachProduct of products) { %>
+                <div class="item">
 
 
-                        <div class="card m-1">
+                    <div class="card ">
 
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">NEW</span>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">NEW</span>
 
-                            <div class="card-img-container mb-6">
-                                <img src="<%=products[i].image%>" class="card-img-top p-3 " alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class=" card-title text-center m-3">
-                                    <%=products[i].name%>
-                                </h5>
-                                <a href="/products/<%=products[i]._id%>" class="btn btn-outline-success">Learn
-                                    More</a>
-                            </div>
-
+                        <div class="card-img-container mb-6">
+                            <img src="<%=eachProduct.image%>" class="card-img-top p-3 " alt="...">
                         </div>
-
+                        <div class="card-body">
+                            <h5 class=" card-title text-center m-3">
+                                <%=eachProduct.name%>
+                            </h5>
+                            <a href="/products/<%=products._id%>" class="btn btn-warning">Learn
+                                More</a>
+                        </div>
                     </div>
 
-                    <%}%>
-
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 mb-5">
+                </div>
 
 
-                            <div class="card m-1 ">
-                                <div class="card-body" id="homepage-card-body-all-products-button">
-                                    <h5> All Products</h5>
-                                    <a href="/products" class="btn btn-outline-success" style="width: 40%;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd"
-                                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-                                        </svg></a>
-                                </div>
+                <%}%>
 
-                            </div>
-
-                        </div>
-
-
-
-
-            </div>
 
         </div>
-    </section>
+
+        <div class="container all-products">
+            <div class="btn btn-warning "> All scooter > </div>
+        </div>
+    </div>
 
 
     <!-- Our Own Testing -->
-    <!-- <section class="homepage-our-testing">
-        <div class="container video-text-icons">
+    <section class="homepage-our-testing">
+        <div class="container video-icons-text">
             <div class="row video-text">
-                <div class="col-md-6">
+                <div class="col-md-6 video">
                     <iframe
-                        src="https://www.youtube.com/embed/SKJeqRkPLco?showinfo=0&autoplay=1&mute=1&enablejsapi=1&loop=1&playlist=SKJeqRkPLco"></iframe>
+                        src="https://www.youtube.com/embed/N6-pPxDq_DY?autoplay=1&mute=1&controls=0&loop=1"></iframe>
+
+
+
+
                 </div>
-                <div class="col-md-6">
-                    <h5>We do our own testing</h5>
-                    <h1>We present real parameters</h1>
-                    <p>We do what others don't. For our products, you will find <span> independently measured
-                            specs</span>. You don't have to rely on manufacturers' marketing claims, but you have <span>
-                            objective mileage, performance, acceleration, or braking data</span>. All this is measured
-                        by professional technology and our test driver.</p>
+                <div class="col-md-6 text">
+                    <div class="sub-title">WE DO OUR OWN TESTING</div>
+                    <div class="title">We present real parameters</div>
+                    <div class="text">We do what others don't. For our products, you will find <span> independently
+                            measured
+                            specs.</span> You don't have to rely on manufacturers' marketing claims, but you have <span>
+                            objective mileage, performance, acceleration, or braking data.</span> All this is measured
+                        by professional technology and our test driver.</div>
                 </div>
             </div>
+
             <div class="row icons-text">
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696666012/VetStore/homepage/our-own-testing/5-PhotoRoom_fwexqp.png"
                             class="card-img-top" alt="...">
@@ -165,7 +155,7 @@
                 </div>
 
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696666012/VetStore/homepage/our-own-testing/6-PhotoRoom_qrskag.png"
                             class="card-img-top" alt="...">
@@ -177,7 +167,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696666011/VetStore/homepage/our-own-testing/7-PhotoRoom_fdh50x.png"
                             class="card-img-top" alt="...">
@@ -189,7 +179,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696666012/VetStore/homepage/our-own-testing/8-PhotoRoom_fwvqfm.png"
                             class="card-img-top" alt="...">
@@ -202,7 +192,7 @@
                 </div>
 
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696666012/VetStore/homepage/our-own-testing/9-PhotoRoom_s9i7zs.png"
                             class="card-img-top" alt="...">
@@ -213,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-2">
+                <div class="col-6 col-md-2 card-wrapper">
                     <div class="card">
                         <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1696666012/VetStore/homepage/our-own-testing/10-PhotoRoom_h3jjqv.png"
                             class="card-img-top" alt="...">
@@ -227,7 +217,7 @@
             </div>
         </div>
 
-    </section> -->
+    </section>
 
 
 

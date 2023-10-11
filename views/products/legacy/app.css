@@ -1,0 +1,46 @@
+
+/* Products list */
+
+.homepage-products-preview {
+
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-bottom: 30px;
+}
+
+
+.homepage-products-preview .title {
+    text-align: center;
+}
+
+.homepage-products-preview h5 {
+    padding-bottom: 10px;
+}
+
+.homepage-products-preview h1 {
+    font-weight: bold;
+    padding-bottom: 20px
+}
+
+.homepage-products-preview {
+    margin: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 2%;
+}
+
+.homepage-products-preview h2 {
+    margin-bottom: 3%;
+}
+
+.homepage-products-preview .card {
+    width: auto;
+    height: 100%;
+    border: none;
+}
+
+
+.homepage-products-preview h2 {
+    text-align: center;
+
+}

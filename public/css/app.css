@@ -150,51 +150,96 @@ body {
     width: 100px;
 }
 
-/* Products list */
 
-.homepage-products-preview {
-
-    padding-top: 50px;
-    padding-bottom: 80px;
-    margin-bottom: 30px;
-}
-
-
-.homepage-products-preview .title {
+/* PRODUCT LIST */
+.homepage-our-products .title {
     text-align: center;
 }
 
-.homepage-products-preview h5 {
-    padding-bottom: 10px;
+
+.homepage-our-products .container {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.homepage-products-preview h1 {
+.homepage-our-products .container .item {
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 25px
+}
+
+.homepage-our-products .all-products {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.homepage-our-products .all-products .btn {
     font-weight: bold;
-    padding-bottom: 20px
-}
+    width: 200px;
 
-.homepage-products-preview {
-    margin: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    padding: 2%;
-}
 
-.homepage-products-preview h2 {
-    margin-bottom: 3%;
-}
-
-.homepage-products-preview .card {
-    width: auto;
-    height: 100%;
-    border: none;
 }
 
 
-.homepage-products-preview h2 {
-    text-align: center;
+/* Hover + shadow effects for cards */
+.homepage-our-products .card {
+
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    background: white;
+}
+
+.homepage-our-products .item:hover .card {
+    transform: scale(1.1);
+    transition: transform .15s ease-in-out;
+}
+
+
+.homepage-our-products .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+.homepage-our-products .card .card-body .btn {
+    width: 60%;
+}
+
+
+
+/* Slick arrows and dots */
+.homepage-our-products .slick-next {
+    right: 55px;
+}
+
+.homepage-our-products .slick-prev {
+    left: 26px;
+}
+
+.homepage-our-products .slick-prev::before,
+.homepage-our-products .slick-next::before {
+    font-size: 50px;
+}
+
+
+.homepage-our-products .slick-next::before,
+.homepage-our-products .slick-prev::before {
+    /* color: #ffcf00 */
+    color: darkgray;
+}
+
+
+.homepage-our-products .slick-dots {
+    left: 0px;
+}
+
+
+
+
+
 
 #homepage-card-body-all-products-button {
     display: flex;
@@ -207,6 +252,92 @@ body {
 
 
 /* OUR OWN TESTING */
+.homepage-our-testing {
+    padding-bottom: 350px;
+}
+
+.homepage-our-testing .video-icons-text {
+    position: relative;
+}
+
+.homepage-our-testing .icons-text {
+    position: absolute;
+    top: 80%;
+}
+
+.homepage-our-testing .video-text {
+    /* position: relative; */
+    padding-bottom: 50px;
+
+}
+
+
+.homepage-our-testing .video-text .video {}
+
+.homepage-our-testing .video-text .video iframe {
+
+
+
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 5/4;
+
+
+    /* width: 720px;
+    height: 400px; */
+
+    /* -webkit-mask-image: url('https://www.maxblinker.com/themes/panda/img/icon/bublina2obsah.svg'); */
+
+    -webkit-mask-image: url('https://res.cloudinary.com/dashjv0yt/image/upload/v1696864447/VetStore/homepage/our-own-testing/video-mask-svg_igjtrn.svg');
+
+    /* -webkit-mask-image: url('https://res.cloudinary.com/dashjv0yt/image/upload/v1696950178/VetStore/homepage/our-own-testing/Vector_hdjjss.svg'); */
+    -webkit-mask-size: 80%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+
+
+}
+
+.homepage-our-testing .video-text .text {
+    line-height: 180% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.homepage-our-testing .video-text .text .sub-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 21px;
+    ;
+    letter-spacing: 0.35rem;
+    padding-bottom: 10px;
+    color: #C0C0C0;
+}
+
+.homepage-our-testing .video-text .text .title {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 120%;
+    margin-bottom: 30px;
+
+}
+
+.homepage-our-testing .video-text .text .text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+
+
+}
+
+.homepage-our-testing .video-text .text .text span {
+    font-weight: bold;
+}
+
+
 
 .homepage-our-testing .icons-text .card {
     padding-top: 15px;
@@ -216,18 +347,24 @@ body {
     width: 98%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.2) ;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-
-/* .homepage-our-testing .icons-text .col-6 :hover{
-    transform: scale(1.1);
-    transition: transform .15s ease-in-out;
+/* .homepage-our-testing .icons-text .card-wrapper{
+    padding-left: 20px;   
+    padding-right: 20px; 
 } */
 
-.homepage-our-testing .icons-text .card .card-body{
-    padding:0;
+
+
+.homepage-our-testing .icons-text .card-wrapper:hover .card {
+    transform: scale(1.1);
+    transition: transform .15s ease-in-out;
+}
+
+.homepage-our-testing .icons-text .card .card-body {
+    padding: 0;
     padding-top: 10px
 }
 
@@ -247,6 +384,13 @@ body {
 
 }
 
+
+.homepage-our-testing .icons-text {
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
 
 .homepage-our-testing .icons-text img {
     height: 60px;
@@ -1043,6 +1187,17 @@ body {
 
 /*************  ABOUT US ************/
 
+.homepage-about .header {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+
+.homepage-about .details div {
+    padding-top: 20px;
+
+}
 
 
 /* Collage of pics */
@@ -1050,6 +1205,7 @@ body {
 .homepage-collage {
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
 
 .homepage-collage h5 {
