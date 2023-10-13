@@ -63,9 +63,26 @@ $(document).ready(function () {
         slidesToScroll: 2,
         arrows: true,
         dots: true,
-        autoplay: true,
-        
+        autoplay: false,
 
+        responsive: [
+
+            {
+                breakpoint: 780,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+
+        ]
 
 
     });
@@ -82,6 +99,8 @@ $(document).ready(function () {
         autoplay: true,
         arrows: true,
 
+
+
     });
 });
 
@@ -95,23 +114,23 @@ $('.partners-carousel-new').slick({
     arrows: false,
     responsive: [
 
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 430,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
         }
-      },
-      {
-        breakpoint: 430,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }
 
     ]
-  });
+});
 
 
 
@@ -132,23 +151,23 @@ $(document).ready(function () {
             {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                 }
-              },
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
             },
             {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
         ]
 
@@ -176,13 +195,13 @@ $('.slider-nav').slick({
     focusOnSelect: true,
     responsive: [
         {
-          breakpoint: 624,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
+            breakpoint: 624,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
         }]
 });
 

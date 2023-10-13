@@ -131,13 +131,12 @@ app.post('/login', passport.authenticate('local', { failureRedirect: '/login' })
 })
 
 //Docs suggest us using POST/DELETE to prevent hacks
-app.get('/logout', function(req, res, next){
-    req.logout(function(err) {
-      if (err) { return next(err); }
-      res.redirect('/');
+app.get('/logout', function (req, res, next) {
+    req.logout(function (err) {
+        if (err) { return next(err); }
+        res.redirect('/');
     });
-  });
-
+});
 
 
 app.get('/protected', (req, res) => {
@@ -210,13 +209,13 @@ app.get('/products/:id', async (req, res) => {
         const foundTemplate = ejsTemplates[productID];
         console.log(`found template id ${foundTemplate}`)
 
-        res.render(`products/${foundTemplate}`,{product, getStarIcons})
+        res.render(`products/${foundTemplate}`, { product, getStarIcons })
 
 
 
 
 
-    
+
 
 
         // res.render('products/show.ejs', { product, getStarIcons })

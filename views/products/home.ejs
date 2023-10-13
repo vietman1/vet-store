@@ -92,16 +92,40 @@
                         <span
                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">NEW</span>
 
-                        <div class="card-img-container mb-6">
+                        <div class="product-image card-img-container mb-6">
                             <img src="<%=eachProduct.image%>" class="card-img-top p-3 " alt="...">
                         </div>
-                        <div class="card-body">
-                            <h5 class=" card-title text-center m-3">
-                                <%=eachProduct.name%>
-                            </h5>
-                            <a href="/products/<%=products._id%>" class="btn btn-warning">Learn
-                                More</a>
+                        <div class=" product-details card-body">
+
+                            <div class="icons">
+                                <div class="speed">
+                                    <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1697123490/VetStore/homepage/our-products/performance_pcy99c.png"
+                                        alt=""> <span> 55km/h </span>
+                                </div>
+                                <div class="distance">
+                                    <img src="https://res.cloudinary.com/dashjv0yt/image/upload/v1697124284/VetStore/homepage/our-products/between_smzgyl.png"
+                                        alt="">
+                                    <span> 100km </span>
+                                </div>
+                            </div>
+                            <div class=" product-model card-title text-center">
+                                <%=eachProduct.name.toUpperCase()%>
+                            </div>
+
+                            <div class="shipping"> <img
+                                    src="https://res.cloudinary.com/dashjv0yt/image/upload/v1697215011/VetStore/homepage/our-products/delivery_my33wl.png"
+                                    alt=""> Express Shipping</div>
+
+                            <div class="price">
+                                $<%=eachProduct.price%>
+
+                            </div>
+
+                            <!-- <a href="/products/<%=products._id%>" class="btn btn-warning">Learn
+                                More</a> -->
                         </div>
+
+
                     </div>
 
                 </div>
