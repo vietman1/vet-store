@@ -380,6 +380,29 @@ body {
 
 }
 
+.homepage-our-testing .video-text .video video{
+    
+
+
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 5/4;
+
+
+    /* width: 720px;
+    height: 400px; */
+
+    /* -webkit-mask-image: url('https://www.maxblinker.com/themes/panda/img/icon/bublina2obsah.svg'); */
+
+    -webkit-mask-image: url('https://res.cloudinary.com/dashjv0yt/image/upload/v1696864447/VetStore/homepage/our-own-testing/video-mask-svg_igjtrn.svg');
+
+    /* -webkit-mask-image: url('https://res.cloudinary.com/dashjv0yt/image/upload/v1696950178/VetStore/homepage/our-own-testing/Vector_hdjjss.svg'); */
+    -webkit-mask-size: 80%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+
+
 .homepage-our-testing .video-text .text {
     line-height: 180% !important;
     display: flex;
