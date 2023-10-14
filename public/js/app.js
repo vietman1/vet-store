@@ -63,7 +63,7 @@ $(document).ready(function () {
         slidesToScroll: 2,
         arrows: true,
         dots: true,
-        autoplay: false,
+        autoplay: true,
 
         responsive: [
 
