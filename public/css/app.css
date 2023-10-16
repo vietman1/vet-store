@@ -309,9 +309,12 @@ body {
 
 .homepage-our-products .slick-next::before,
 .homepage-our-products .slick-prev::before {
-    /* color: #ffcf00 */
     color: darkgray;
+    
 }
+
+
+
 
 
 .homepage-our-products .slick-dots {
