@@ -81,13 +81,15 @@
             <h1>A choice for everyone</h1>
         </div>
 
+
+
         <div class="container slick-carousel-our-products ">
 
             <% for (let eachProduct of products) { %>
                 <div class="item">
 
-
-                    <div class="card ">
+                    
+                    <div class="card " onclick="redirectToProduct('<%=eachProduct._id%>')">
 
                         <span
                             class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">NEW</span>

@@ -269,11 +269,13 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 18px;
     background: white;
+
 }
 
 .homepage-our-products .item:hover .card {
     transform: scale(1.1);
     transition: transform .15s ease-in-out;
+    cursor: pointer;
 }
 
 
