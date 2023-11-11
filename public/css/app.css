@@ -3,6 +3,7 @@ body {
     /* background-image: url('https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-electric-scooter-4-go/pc/fef33f3db7efa457e1d8584d02b13d5f.jpg?f=webp'); */
     background-color: #f3f3f3;
     font-family: 'Montserrat';
+    color: black;
 
 }
 
@@ -1237,6 +1238,49 @@ body {
 
 }
 
+
+
+
+.product-details-title{
+    text-align: center;
+}
+
+.product-details-individual-details .content{
+    display: flex;
+    
+}
+
+.product-details-individual-details .content .image img{
+    height: 450px;
+    width: 450px;
+}
+
+#brand{
+    height: 200px;
+    width: 350px;
+}
+
+
+.product-details-individual-details .content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+
+.product-details-individual-details .content .text span{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 /*************  AUTHENTICATION FORMS ************/
 
 .authen {
@@ -1806,6 +1850,9 @@ height: 50%; */
 
 @media (max-width: 460px) {
 
+    h1{
+        font-weight: bold;
+    }
     /* Hero page */
     .homepage-hero .body {
         position: absolute;
@@ -1927,6 +1974,50 @@ height: 50%; */
 
 
     }
+
+
+
+
+    /* Product details for each product */
+    .product-details-title{
+        margin-top: 100px;
+    }
+
+    
+    .product-details-individual-details h1{
+        font-weight: 900;
+    }
+    .product-details-individual-details .content{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .product-details-individual-details .content .image{
+        order: 1;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .product-details-individual-details .content .text{
+        order: 2;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+  
+
+    .product-details-individual-details .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .product-details-individual-details .content .image img{
+        height: 95%;
+        width: 95%;
+    }
+
+
 
 }
 
